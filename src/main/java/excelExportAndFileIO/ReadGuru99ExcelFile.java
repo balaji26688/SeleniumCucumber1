@@ -14,8 +14,10 @@ public class ReadGuru99ExcelFile {
 	public void readExcel(String filePath,String fileName,String sheetName) throws IOException{
 
 	    //Create an object of File class to open xlsx file
-
-	    File file =    new File(filePath+"\\"+fileName);
+          String filePath1="C:\\Users\\91898\\OneDrive\\Desktop";
+          String fileName1="\\TestData.xlsx";
+          
+	    File file =    new File(filePath1+"\\"+fileName1);
 
 	    //Create an object of FileInputStream class to read excel file
 
@@ -25,7 +27,7 @@ public class ReadGuru99ExcelFile {
 
 	    //Find the file extension by splitting file name in substring  and getting only extension name
 
-	    String fileExtensionName = fileName.substring(fileName.indexOf("."));
+	    String fileExtensionName = fileName1.substring(fileName1.indexOf("."));
 
 	    //Check condition if the file is xlsx file
 
@@ -48,7 +50,7 @@ public class ReadGuru99ExcelFile {
 
 	    //Read sheet inside the workbook by its name
 
-	    Sheet guru99Sheet = guru99Workbook.getSheet(sheetName);
+	    Sheet guru99Sheet = guru99Workbook.getSheet("Sheet1");
 
 	    //Find number of rows in excel file
 

@@ -91,7 +91,7 @@ public class ReadGuru99ExcelFile {
 
 	    //Call read file method of the class to read data
 
-	    objExcelFile.readExcel(filePath,"ExportExcel.xlsx","ExcelGuru99Demo");
+	    objExcelFile.readExcel(filePath,"ExportExcel.xlsx","ExcelGuru99Demo..");
 
 	    }
 
